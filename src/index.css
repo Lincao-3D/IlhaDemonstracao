@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'react-medium-image-zoom/dist/styles.css';
+@import "tailwindcss";
+@font-face {
+  font-family: 'ClasterOleander';
+  src: url('./assets/fonts/ClasterOleander.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ClassicismoDEMO';
+  src: url('./assets/fonts/ClassicismoDEMO.otf') format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Agraham';
+  src: url('./assets/fonts/Agraham.otf') format('opentype');
+  font-display: swap;
+}
+@theme {
+  --font-sans: "ClassicismoDEMO", "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-claster: "ClasterOleander", serif;
+  --font-atkinson: "Atkinson Hyperlegible Next", sans-serif;
+  --font-classicism: "ClassicismoDEMO", sans-serif;
+  --font-jost: "Jost", sans-serif;
+  --font-agraham: "Agraham", serif;
+  --font-encode: "Encode Sans Condensed", sans-serif;
+  --font-display: var(--font-atkinson);
+}
+
+/* --- Core Layout Rules --- */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbars */
+  overflow-y: auto;   /* CRITICAL: Allow vertical scrolling */
+  position: relative;
+}
+
+#root {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+section.section2-inner > div {
+  box-sizing: border-box;
+}
+
+/* --- Animation Keyframes --- */
+.bg7-flip-container {
+  perspective: 1000px;
+}
+
+.bg7-inner {
+  transform-style: preserve-3d;
+  animation-name: flipIn3D;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused; /* Default paused */
+  opacity: 0;
+}
+
+@keyframes flipIn3D {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes marquee-vert {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+}
+
+.marquee-inner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: marquee-vert 10s linear infinite;
+  will-change: transform; /* for performance */
+}
