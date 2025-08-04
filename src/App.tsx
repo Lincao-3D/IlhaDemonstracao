@@ -119,7 +119,7 @@ export default function App() {
                           allowFullScreen
                           loading="lazy"
                           referrerPolicy="no-referrer-when-downgrade"
-                          title="Ilha Pura Location Map"
+                          title="Condomínio-Exemp. Location Map"
                         />
                       </div>
                       {/* Placeholder for UnderMap fallback */}

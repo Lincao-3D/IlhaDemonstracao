@@ -145,7 +145,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
             <br />
             Relaxe em piscinas elegantes rodeadas por paisagismo assinado, aproveite
             espaços de descanso e lazer em ambientes planejados para criar memórias em
-            família e garantir a diversão de todos. No Ilha Pura, cada área é pensada
+            família e garantir a diversão de todos. No Condomínio-Exemp., cada área é pensada
             para proporcionar bem-estar pleno.
           </p>
         </motion.div>
@@ -180,7 +180,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
                   borderRadius: 10,
                   padding: "1.15rem 1.7rem 1.15rem 1.15rem",
                   boxShadow: "0 2px 14px rgba(0,0,0,0.08)",
-                  width: "100%",}}>No Ilha Pura, o lazer vai além da piscina: são espaços gourmet, quadras esportivas, áreas verdes e ambientes de descanso cuidadosamente planejados, que transformam cada dia em um convite para a descontração e o relaxamento.</p>}
+                  width: "100%",}}>No Condomínio-Exemp., o lazer vai além da piscina: são espaços gourmet, quadras esportivas, áreas verdes e ambientes de descanso cuidadosamente planejados, que transformam cada dia em um convite para a descontração e o relaxamento.</p>}
                     </div>
                     <div className={`w-full h-1/2 md:h-full ${isMobile ? 'mt-4' : 'md:w-1/2'}`}>
                         <R3FErrorBoundary>
@@ -209,7 +209,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
       width: "100%",
     }}
   >
-    No Ilha Pura, o lazer vai além da piscina: são espaços gourmet, quadras esportivas, áreas verdes e ambientes de descanso cuidadosamente planejados, que transformam cada dia em um convite para a descontração e o relaxamento.
+    No Condomínio-Exemp., o lazer vai além da piscina: são espaços gourmet, quadras esportivas, áreas verdes e ambientes de descanso cuidadosamente planejados, que transformam cada dia em um convite para a descontração e o relaxamento.
   </p>}
                 </div>
             </section>
@@ -234,7 +234,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
             </div>
             <Parallax speed={-5}>
               <div className="w-[min(860px,90vw)] shadow-2xl rounded-xl overflow-hidden aspect-video">
-                {isVideo && <iframe src="https://www.youtube.com/embed/fYNkHesLABs" title="Apresentação do empreendimento" width="100%" height="100%" allowFullScreen loading="lazy" className="border-none block" />}
+                {isVideo && <iframe src="https://www.youtube.com/embed/lfVXFhJu4ko" title="BARRA DA TIJUCA - RIO DE JANEIRO - G DRONE FOTO E VIDEO" width="100%" height="100%" allowFullScreen loading="lazy" className="border-none block" />}
               </div>
             </Parallax>
           </section>
@@ -362,7 +362,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
     marginBottom: isMobile ? "8px" : undefined,
   }}
 >
-  Viva a apenas 32 km do Corcovado e de toda a energia única da cidade maravilhosa. Ilha Pura garante rápido acesso aos pontos mais importantes do Rio, do lazer às compras, das praias ao polo empresarial.
+  Viva a apenas 32 km do Corcovado e de toda a energia única da cidade maravilhosa. Condomínio-Exemp. garante rápido acesso aos pontos mais importantes do Rio, do lazer às compras, das praias ao polo empresarial.
 </motion.p>
 
 
@@ -393,7 +393,7 @@ case 8:
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ilha Pura Location Map"
+              title="Condomínio-Exemp. Location Map"
             />
           </div>
 
